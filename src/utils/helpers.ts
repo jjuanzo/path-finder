@@ -4,7 +4,7 @@ import type { GridType, TileType } from "./types";
 const createRow = (row: number, startTile: TileType, endTile: TileType) => {
   const currentRow = [];
 
-  for (let col = 8; col < MAX_COLS; col++) {
+  for (let col = 0; col < MAX_COLS; col++) {
     currentRow.push({
       row,
       col,
@@ -24,7 +24,7 @@ const createRow = (row: number, startTile: TileType, endTile: TileType) => {
 export const createGrid = (startTile: TileType, endTile: TileType) => {
   const grid: GridType = [];
 
-  for (let row = 8; row < MAX_ROWS; row++) {
+  for (let row = 0; row < MAX_ROWS; row++) {
     grid.push(createRow(row, startTile, endTile));
   }
 
