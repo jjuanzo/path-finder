@@ -1,6 +1,10 @@
 export type AlgorithmType = "DIJSKTRA" | "A_STAR" | "BFS" | "DFS";
 
 export type MazeType = "NONE" | "BINARY_TREE" | "RECURSIVE_DIVISION";
+export interface MazeSelectType {
+  label: string;
+  value: MazeType;
+}
 
 export type TileType = {
   row: number;
@@ -17,3 +21,7 @@ export type TileType = {
 export type GridType = TileType[][];
 
 export type SpeedType = 2 | 1 | 0.5;
+export interface SpeedSelectType {
+  label: string;
+  value: SpeedType;
+}
